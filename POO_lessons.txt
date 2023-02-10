@@ -1,0 +1,70 @@
+==================================   POO ?  ======================================== 
+
+
+Modeliser une apps sous fomre d'objets
+Découper l'app 
+La rendre plus évolutive et maintenable
+
+----------    CLASS ?  -------------
+
+
+Modèle de structure définissant la structure commune à tous les objets 
+
+Définie par méthodes et attributs
+
+
+Differente visibilité des propriétés : 
+
+public : acces a la donnée à l'ext de la class 
+
+pivate : acces a la donnée que dans les accolades 
+
+protected : notion heritage, si protected visibilité sur parent ->  enfant 
+
+
+Méthodes : actions applicables à un objet 
+Placés après les attributs 
+
+Instances : représentation particulère d'une class 
+
+new person ()
+
+"instance de class"          "instance d'objet"
+
+
+
+---------------- $this -------------------
+
+représentation de tous les attributs et méthodes de la classe courante 
+Accessible en lecture et  en écriture au sein de la classe 
+
+
+--------- METHODES MAGIQUES ---------------
+
+__construct appelé des l'instance
+ __destruct appelé des le unset ( la destruction de l'objet)
+  __set
+   __get
+    __toString
+
+
+
+--------------- HERITAGES ------------------
+
+protected : notion heritage,
+si protected visibilité sur parent -> enfant 
+
+
+Usage du mot clef extend lors de la création de class dans class 
+ pour recupérer les attributs "protected"
+
+
+
+ --------------- METHODE STATIQUE -----------------
+
+inutile d'instancier une classe pour une méthode statique 
+
+on utilise  class::fonction();
+
+pour acceder d'une methode a une autre dans la class on utilise 
+self et non $this
