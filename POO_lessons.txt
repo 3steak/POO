@@ -68,3 +68,10 @@ on utilise  class::fonction();
 
 pour acceder d'une methode a une autre dans la class on utilise 
 self et non $this
+
+
+
+
+----------------  MODELE ---------------------- 
+
+
