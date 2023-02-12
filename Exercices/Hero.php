@@ -1,5 +1,5 @@
 <?php
-require(__DIR__ . '/Character.php');
+require_once(__DIR__ . '/Character.php');
 
 class Hero extends Character
 {
