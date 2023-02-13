@@ -132,6 +132,7 @@ class Hero extends Character
      * @param  mixed $attack
      * @return void
      */
+
     public function attacked($attack)
     {
         $this->shieldValue -= $attack;

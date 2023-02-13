@@ -1,7 +1,6 @@
 <?php
 require_once(__DIR__ . '/Character.php');
 
-
 class Orc extends Character
 {
     private int $damage;
@@ -26,7 +25,7 @@ class Orc extends Character
      */
     public function __toString()
     {
-        return "L'Orc a $this->health de vie et $this->rage rage. <br><hr>";
+        return "L'Orc a $this->health de vie et $this->rage rage.<br><hr>";
     }
 
 
@@ -58,15 +57,16 @@ class Orc extends Character
     /** Methode qui permet de randomiser la valeur d'attack de l'Orc
      * attack
      *
-     * @return void
+     * @return int
      */
     public function attack()
     {
-        return  $attack = rand(600, 800);
+        $this->setDamage(rand(200, 400));
+        return $this->getDamage();
     }
 }
 
 
-// $Big = new Orc(500, 200, 40);
+// $Big = new Orc(500, 200);
 
 // echo $Big;
